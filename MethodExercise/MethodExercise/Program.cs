@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text.RegularExpressions;
 
 namespace MethodExercise
 {
@@ -9,8 +10,12 @@ namespace MethodExercise
             Console.WriteLine("What is your name?");
             string name = Console.ReadLine();
             Console.WriteLine("What is your age?");
-            int age = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Name: " + name + "\n" + "Age: " + age);
+            string age = Console.ReadLine();
+            Console.WriteLine("What is your favorite color");
+            string color = Console.ReadLine();
+            Console.WriteLine("Name: " + name + "\n" + "Age: " + age + "\n" + "Favorite Color: " + color);
+
         }
+      
     }
 }
