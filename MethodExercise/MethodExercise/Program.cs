@@ -7,21 +7,13 @@ namespace MethodExercise
     {
         static void Main(string[] args)
         {
-            /*Console.WriteLine("What is your name?");
+            Console.WriteLine("What is your name?");
             string name = Console.ReadLine();
             Console.WriteLine("What is your age?");
             string age = Console.ReadLine();
             Console.WriteLine("What is your favorite color");
             string color = Console.ReadLine();
             Console.WriteLine("Name: " + name + "\n" + "Age: " + age + "\n" + "Favorite Color: " + color);
-            string[] array = new string[5]; */
-            int[] arr = new int[3];
-            arr[0] = 1;
-            arr[1] = 2;
-            arr[2] = 3;
-            string num = (arr.ToString());
-
-            Console.WriteLine(num);
 
         }
         public static int Sum(params int[] arr)
@@ -68,6 +60,33 @@ namespace MethodExercise
                 mod = mod % arr[k];
             }
             return mod;
+        }
+        public static int Add(int a, int b)
+        {
+            return a + b;
+        }
+        public static decimal Add(decimal a, decimal b)
+        {
+            return a + b;
+        }
+        public static string Add(int a, int b, bool i)
+        {
+            if(i == true)
+            {
+                int c = a + b;
+                if(c == 1)
+                {
+                    return c + " dollar";
+                }
+                else
+                {
+                    return c + " dollars";
+                }
+            }
+            else
+            {
+                return (a + b).ToString();
+            }
         }
       
     }
